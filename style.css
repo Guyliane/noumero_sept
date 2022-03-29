@@ -6,6 +6,12 @@ html {
     margin-right: 70px;
 }
 
+@media (max-width:1023px) {
+    .paint{
+        margin-right: 0px;
+    }
+}
+
 #contact{
     margin-top: 30px;
 }
@@ -17,3 +23,4 @@ html {
 .text-home{
     margin-left: 70px;
 }
+
