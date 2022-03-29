@@ -1,0 +1,14 @@
+{
+  "name": "noumero_sept",
+  "version": "1.0.0",
+  "description": "noumero_sept website for paint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dauphinri",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.3"
+  }
+}

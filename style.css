@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.paint{
+    margin-right: 70px;
+}
+
+#contact{
+    margin-top: 30px;
+}
+
+.gallery-part{
+    margin-bottom: 130px;
+}
+
+.text-home{
+    margin-left: 70px;
+}
