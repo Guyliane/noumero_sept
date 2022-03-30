@@ -65,52 +65,58 @@
     <div class="bg-color-contact">
         <section class="container" id="contact">
             <h2 class="title is-1 has-text-left label-contact pt-6 pb-5">Request</h2>
-            <div class="field">
-                <label for="" class="label label-contact">Nom</label>
-                <div class="control">
-                    <input type="text" class="input" placeholder="Nom">
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="field">
+                    <label class="label label-contact" >Nom</label>
+                    <div class="control">
+                        <input type="text" class="input" name="name" required placeholder="Nom">
+                    </div>
                 </div>
-            </div>
-        
-            <div class="field">
-                <label for="" class="label label-contact">Prénom</label>
-                <div class="control has-icons-left">
-                    <input type="text" class="input" placeholder="Prénom">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                    </span>
+            
+                <div class="field">
+                    <label class="label label-contact">Prénom</label>
+                    <div class="control has-icons-left">
+                        <input type="text" class="input" name="firstname" required placeholder="Prénom">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
                 </div>
-            </div>
-        
-            <div class="field">
-                <label for="" class="label label-contact">Email</label>
-                <div class="control has-icons-left">
-                    <input type="email" class="input" placeholder="Email">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
+            
+                <div class="field">
+                    <label class="label label-contact">Email</label>
+                    <div class="control has-icons-left">
+                        <input type="email" name="mail" required class="input" placeholder="Email">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="field">
-                <label for="" class="label label-contact">Entreprise</label>
-                <div class="control">
-                    <input type="text" class="input" placeholder="Nom de votre entreprise">
+                <div class="field">
+                    <label class="label label-contact">Entreprise</label>
+                    <div class="control">
+                        <input type="text" name="company" class="input" placeholder="Nom de votre entreprise">
+                    </div>
                 </div>
-            </div>
-        
-            <div class="field">
-                <label for="" class="label label-contact">Message</label>
-                <div class="control">
-                    <textarea class="textarea" placeholder="Dimension : 80 x 80 cm Personnage central : Bob l’éponge Element d’inspiration : Dragon ball, pokemon , plamiers soleil ... Mots à retrouver : BLA-BLA-BLA, LOVE, My company Couleurs : Rouge, Vives..."></textarea>
+            
+                <div class="field">
+                    <label for="" class="label label-contact">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Dimension : 80 x 80 cm Personnage central : Bob l’éponge Element d’inspiration : Dragon ball, pokemon , plamiers soleil ... Mots à retrouver : BLA-BLA-BLA, LOVE, My company Couleurs : Rouge, Vives..."></textarea>
+                    </div>
                 </div>
-            </div>
-        
-            <div class="field is-grouped mb-3">
-                <div class="control">
-                    <button class="button button-send-css">Send</button>
+
+                <div class="field">
+                    <div data-netlify-recaptcha="true"></div>
                 </div>
-            </div>
+            
+                <div class="field is-grouped mb-3">
+                    <div class="control">
+                        <button type="submit" class="button button-send-css">Send</button>
+                    </div>
+                </div>
+            </form>
         </section>
     </div>
         <!-- #endregion -->
