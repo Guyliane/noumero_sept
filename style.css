@@ -2,27 +2,6 @@ html {
     scroll-behavior: smooth;
   }
   
-.paint{
-    margin-right: 70px;
-}
-
-@media (max-width:1023px) {
-    .paint{
-        display: none;
-    }
-}
-
-#contact{
-    margin-top: 30px;
-}
-
-.gallery-part{
-    margin-bottom: 130px;
-}
-
-.text-home{
-    margin-left: 70px;
-}
 
 .scroll-down{
     height: 50px;
@@ -47,6 +26,41 @@ html {
     border-top: transparent;
     border-left: transparent;
     animation: scroll-down 1s ease-in-out infinite;
+}
+
+.paint{
+    margin-right: 70px;
+}
+
+.text-home{
+    margin-left: 70px;
+}
+
+@media (max-width:1023px) {
+    .paint{
+        display: none;
+    }
+}
+
+@media (max-width:850px) {
+    .has-text-left {
+        text-align: center!important;
+    }
+    .text-home{
+        margin-left: 0px;
+    }
+    .scroll-down{
+        bottom: 250px;
+    }
+
+}
+
+#contact{
+    margin-top: 30px;
+}
+
+.gallery-part{
+    margin-bottom: 130px;
 }
 
 .container{
